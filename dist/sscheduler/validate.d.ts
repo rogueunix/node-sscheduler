@@ -1,0 +1,10 @@
+import { Allocation } from './Allocated';
+import { DateTime } from './DateTime';
+import { DailyTimetable } from './Timetable/DailyTimetable';
+import { WeeklyTimetable } from './Timetable/WeeklyTimetable';
+export declare const range: (from: string, to: string) => void;
+export declare const unavailability: (unavailability: (import("../interval/types").Interval | DateTime)[]) => void;
+export declare const allocated: (allocated: Allocation[]) => void;
+export declare const interval: (interval: number) => void;
+export declare const duration: (duration: number) => void;
+export declare const timetable: (timetable: WeeklyTimetable | DailyTimetable) => void;
